@@ -1,0 +1,146 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    height: 45px;
+    width: 45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.logo .logo-text {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+nav .navlinks {
+    list-style-type: none;
+    display: flex;
+}
+
+nav .navlinks li {
+    margin-right: 20px;
+}
+
+nav .navlinks li a {
+    color: #e5e5e5;
+    font-size: 16px;
+}
+
+nav .navlinks li a:hover {
+    color: #007ced;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+.contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-header h1 {
+    color: #007ced;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Contact Cards */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-card {
+    background-color: #007ced;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+}
+
+.contact-card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 16px;
+}
+
+.contact-card a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        max-width: 90%;
+    }
+}
